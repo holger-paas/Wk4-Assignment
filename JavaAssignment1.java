@@ -5,7 +5,7 @@ public class JavaAssignment1 {
    public static void main(String[] args) {
 
       // Question 1:
-      int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+      int[] ages = {3, 9, 23, 64, 2, 8, 28, 93, 63};
       int agesLength = ages.length;
       System.out.println(ages[agesLength - 1] - ages[0]);
       double sumAge = 0;
@@ -108,15 +108,7 @@ public class JavaAssignment1 {
    
    // Question 11:
    public static boolean avgComparison(double[] num1, double[] num2) {
-      double sumNum1 = 0;
-      double sumNum2 = 0;
-      for (double number : num1) {
-         sumNum1 += number;
-      }
-      for (double number : num2) {
-         sumNum2 += number;
-      }
-      return (sumNum1 / num1.length) > (sumNum2 / num2.length);
+      return avgArray(num1) > avgArray(num2);
    }
    
    // Question 12:
